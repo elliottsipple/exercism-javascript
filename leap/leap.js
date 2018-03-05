@@ -8,7 +8,7 @@ var Year = function (year) {
 };
 
 Year.prototype.isLeap = function () {
-    /* Test if year is leap year */
+    /* is leap year if divisible by 4, but not 100, unless also divisible by 400 */
     return ((this.year % 4 == 0) && ((this.year % 100 != 0) || (this.year % 400 == 0)));
 };
 
